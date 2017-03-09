@@ -13,7 +13,9 @@ public class onetwo {
 		if(one == 1){
 			System.out.println("제 이름은 함성준입니다.");
 		}
-		
+		else if(one == 2){
+
+			System.out.println("자기소개 : 학번 13 , 학과 컴공 , 키 적당함);
 	}
 
 }
