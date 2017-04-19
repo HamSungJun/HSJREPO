@@ -1,0 +1,21 @@
+{
+  "name": "paper-weather",
+  "main": "paper-weather.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "iron-ajax": "PolymerElements/iron-ajax#^1.4.3",
+    "iron-flex-layout": "PolymerElements/iron-flex-layout#^1.3.2",
+    "paper-styles": "PolymerElements/paper-styles#^1.1.5",
+    "paper-spinner": "PolymerElements/paper-spinner#^1.2.1",
+    "moment-element": "abdonrd/moment-element#^0.4.4"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "paper-button": "PolymerElements/paper-button",
+    "iron-selector": "PolymerElements/iron-selector",
+    "paper-checkbox": "PolymerElements/paper-checkbox",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  }
+}

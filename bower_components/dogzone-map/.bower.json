@@ -1,0 +1,45 @@
+{
+  "name": "dogzone-map",
+  "version": "0.2.2",
+  "authors": [
+    "Tobias Hutterer <tobias.hutterer@gmail.com>"
+  ],
+  "description": "An element providing a Google Map with all dog parks in Vienna / Austria.",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "seed"
+  ],
+  "main": "dogzone-map.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/citydogweb/dogzone-map/",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.4",
+    "google-map": "GoogleWebComponents/google-map#~1.1.9",
+    "iron-ajax": "PolymerElements/iron-ajax#~1.1.1",
+    "paper-fab": "PolymerElements/paper-fab#~1.1.2",
+    "iron-iconset-svg": "PolymerElements/iron-iconset-svg#~1.0.4",
+    "paper-input": "PolymerElements/paper-input#^1.1.5",
+    "paper-card": "PolymerElements/paper-card#^1.1.1",
+    "paper-item": "PolymerElements/paper-item#^1.1.3",
+    "poly-filter": "^1.1.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*"
+  },
+  "_release": "0.2.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.2",
+    "commit": "b669ee8f61a2301a6f81b72787e988c9b381934b"
+  },
+  "_source": "https://github.com/citydogweb/dogzone-map.git",
+  "_target": "^0.2.2",
+  "_originalSource": "citydogweb/dogzone-map"
+}

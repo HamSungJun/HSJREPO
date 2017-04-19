@@ -1,0 +1,61 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="memories-view">
+  <template>
+  <style is="custom-style" include="iron-flex iron-flex-alignment shared-styles">
+      :host {
+        display: block;
+        padding: 10px;
+      }
+      paper-material.note {
+        width: 300px;
+        padding:20px;
+        margin: 10px;
+        background-color: white;
+      }
+    </style>
+
+    <div class="card flex layout horizontal wrap start">
+      <template is="dom-repeat" items="[[notes]]">
+      <paper-material class="note" elevation="5">{{item.content}}</paper-material>
+      </template>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'memories-view',
+      ready: function() {
+        var request = document.createElement('iron-ajax');
+        this.notes = [];
+        var self = this;
+        request.handleAs = 'json';
+        request.method = 'post';
+        request.url = '/api/list/';
+        var req = request.generateRequest();
+        req.completes.then(function(response) {
+          console.log(self.notes);
+          for (let item of response.response.item) {
+            console.log(item);
+            self.push('notes', item);
+          }
+        });
+      },
+    });
+  </script>
+</dom-module>
