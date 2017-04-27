@@ -1,97 +1,38 @@
-# Polymer App Toolbox - Starter Kit
+# 2013041007 함성준 WelCome to My REPO!
 
-[![Build Status](https://travis-ci.org/PolymerElements/polymer-starter-kit.svg?branch=master)](https://travis-ci.org/PolymerElements/polymer-starter-kit)
+페이지 종류 및 기능 간략 소개 이후 WIKI에서 자세히 설명하겠습니다.
 
-This template is a starting point for building apps using a drawer-based
-layout. The layout is provided by `app-layout` elements.
+## 어떤 페이지 들이 있나요?
 
-This template, along with the `polymer-cli` toolchain, also demonstrates use
-of the "PRPL pattern" This pattern allows fast first delivery and interaction with
-the content at the initial route requested by the user, along with fast subsequent
-navigation by pre-caching the remaining components required by the app and
-progressively loading them on-demand as the user navigates through the app.
+### 1. 작성된 노트들을 출력해주는 페이지
+ <a href="http://tinypic.com?ref=2qxpd1h" target="_blank"><img src="http://i65.tinypic.com/2qxpd1h.png" border="0" alt="Image and video hosting by TinyPic"></a>
 
-The PRPL pattern, in a nutshell:
+설명 : 데이터 베이스의 Row하나씩을 불러와서 출력해줍니다.
 
-* **Push** components required for the initial route
-* **Render** initial route ASAP
-* **Pre-cache** components for remaining routes
-* **Lazy-load** and progressively upgrade next routes on-demand
+### 2. 노트를 작성하는 페이지
+<a href="http://tinypic.com?ref=23jk281" target="_blank"><img src="http://i64.tinypic.com/23jk281.png" border="0" alt="Image and video hosting by TinyPic"></a>
+설명 : 에디터 컴포넌트를 통해 작성하고자 하는 노트를 작성할 수 있는 페이지 입니다.
 
-### Migrating from Polymer Starter Kit v1?
+### 3. 달력 페이지
+<a href="http://tinypic.com?ref=ncz5sh" target="_blank"><img src="http://i67.tinypic.com/ncz5sh.png" border="0" alt="Image and video hosting by TinyPic"></a>
+설명 : 달력 컴포넌트를 통해 날짜 확인과 자기 스케줄을 관리할 수 있습니다.
 
-[Check out our blog post that covers what's changed in PSK2 and how to migrate!](https://www.polymer-project.org/1.0/blog/2016-08-18-polymer-starter-kit-or-polymer-cli.html)
+### 4. 타이머 페이지
+<a href="http://tinypic.com?ref=2d9zrjq" target="_blank"><img src="http://i64.tinypic.com/2d9zrjq.png" border="0" alt="Image and video hosting by TinyPic"></a>
+설명 : 타이머 컴포넌트를 통해 시간적인 일을 다룰 수 있습니다.
 
-### Quickstart
+### 5. 다이렉트 구글 서치 페이지
+<a href="http://tinypic.com?ref=xn93q0" target="_blank"><img src="http://i68.tinypic.com/xn93q0.png" border="0" alt="Image and video hosting by TinyPic"></a>
+설명 : 구글과 연결되어 검색결과를 구글검색으로 표시합니다.
 
-We've recorded a Polycast to get you up and running with PSK2 fast!
+### 6. 날씨 페이지
+<a href="http://tinypic.com?ref=dqpfs" target="_blank"><img src="http://i67.tinypic.com/dqpfs.png" border="0" alt="Image and video hosting by TinyPic"></a>
+설명 : 날씨 컴포넌트를 통해서 한주간의 날씨를 살펴 볼 수 있습니다.
 
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=HgJ0XCyBwzY&list=PLNYkxOF6rcIDdS7HWIC_BYRunV6MHs5xo&index=10">
-    <img src="https://img.youtube.com/vi/HgJ0XCyBwzY/0.jpg" alt="Polymer Starter Kit 2 video">
-  </a>
-</p>
+### 7. 오디오 페이지
+<a href="http://tinypic.com?ref=2jezjmv" target="_blank"><img src="http://i67.tinypic.com/2jezjmv.png" border="0" alt="Image and video hosting by TinyPic"></a>
+설명 : 오디오 플레이어 컴포넌트를 통해서 음악 감상을 할 수 있습니다.
 
-### Setup
-
-##### Prerequisites
-
-First, install [Polymer CLI](https://github.com/Polymer/polymer-cli) using
-[npm](https://www.npmjs.com) (we assume you have pre-installed [node.js](https://nodejs.org)).
-
-    npm install -g polymer-cli
-
-##### Initialize project from template
-
-    mkdir my-app
-    cd my-app
-    polymer init starter-kit
-
-### Start the development server
-
-This command serves the app at `http://localhost:8080` and provides basic URL
-routing for the app:
-
-    polymer serve --open
-
-### Build
-
-This command performs HTML, CSS, and JS minification on the application
-dependencies, and generates a service-worker.js file with code to pre-cache the
-dependencies based on the entrypoint and fragments specified in `polymer.json`.
-The minified files are output to the `build/unbundled` folder, and are suitable
-for serving from a HTTP/2+Push compatible server.
-
-In addition the command also creates a fallback `build/bundled` folder,
-generated using fragment bundling, suitable for serving from non
-H2/push-compatible servers or to clients that do not support H2/Push.
-
-    polymer build
-
-### Preview the build
-
-This command serves the minified version of the app at `http://localhost:8080`
-in an unbundled state, as it would be served by a push-compatible server:
-
-    polymer serve build/unbundled
-
-This command serves the minified version of the app at `http://localhost:8080`
-generated using fragment bundling:
-
-    polymer serve build/bundled
-
-### Run tests
-
-This command will run [Web Component Tester](https://github.com/Polymer/web-component-tester)
-against the browsers currently installed on your machine:
-
-    polymer test
-
-### Adding a new view
-
-You can extend the app by adding more views that will be demand-loaded
-e.g. based on the route, or to progressively render non-critical sections of the
-application. Each new demand-loaded fragment should be added to the list of
-`fragments` in the included `polymer.json` file. This will ensure those
-components and their dependencies are added to the list of pre-cached components
-and will be included in the `bundled` build.
+### 8. 지구촌 페이지
+<a href="http://tinypic.com?ref=70xovb" target="_blank"><img src="http://i66.tinypic.com/70xovb.png" border="0" alt="Image and video hosting by TinyPic"></a>
+설명 : 구글맵 컴포넌트를 통해서 지구촌을 둘러 볼 수 있습니다.
