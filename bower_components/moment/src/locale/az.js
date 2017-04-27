@@ -1,5 +1,5 @@
 //! moment.js locale configuration
-//! locale : Azerbaijani [az]
+//! locale : azerbaijani (az)
 //! author : topchiyev : https://github.com/topchiyev
 
 import moment from '../moment';
@@ -78,7 +78,7 @@ export default moment.defineLocale('az', {
             return 'axşam';
         }
     },
-    dayOfMonthOrdinalParse: /\d{1,2}-(ıncı|inci|nci|üncü|ncı|uncu)/,
+    ordinalParse: /\d{1,2}-(ıncı|inci|nci|üncü|ncı|uncu)/,
     ordinal : function (number) {
         if (number === 0) {  // special case for zero
             return number + '-ıncı';

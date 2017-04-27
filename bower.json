@@ -22,7 +22,10 @@
     "paper-button": "^1.0.14",
     "game-snakes": "^0.3.1",
     "paper-audio-player": "^1.1.1",
-    "mp-video": "^1.0.1"
+    "mp-video": "^1.0.1",
+    "google-map": "GoogleWebComponents/google-map#^1.2.0",
+    "x-life": "*",
+    "platform.js": "platform#^1.3.4"
   },
   "devDependencies": {
     "web-component-tester": "^4.0.0"

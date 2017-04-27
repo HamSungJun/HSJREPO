@@ -70,13 +70,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <app-drawer id="drawer">
         <app-toolbar>Menu</app-toolbar>
         <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
-          <a name="memories" href="/memories">Memory</a>
-          <a name="monthly" href="/monthly">Monthly</a>
-          <a name="write" href="/write">Write</a>
-          <a name="media" href="/media">Timer</a>
-          <a name="search" href="/search">View Search</a>
-          <a name="weather" href="/weather">My City's weather</a>
-          <a name="luckyman" href="/luckyman">LuckyMan</a>
+          <a name="memories" href="/memories">노트저장소</a>
+          <a name="write" href="/write">노트작성</a>
+          <a name="monthly" href="/monthly">달력보기</a>
+          <a name="media" href="/media">타이머</a>
+          <a name="search" href="/search">구글검색하기</a>
+          <a name="weather" href="/weather">우리지역의 날씨</a>
+          <a name="luckyman" href="/luckyman">뮤직라운지</a>
+          <a name="ourworld" href="/ourworld">지구촌둘러보기</a>
         </iron-selector>
       </app-drawer>
 
@@ -103,6 +104,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <weather-view name="weather"></weather-view>
           <nopage-view name="nopage"></nopage-view>
           <luckyman-view name="luckyman"></luckyman-view>
+          <ourworld-view name="ourworld"></ourworld-view>
         </iron-pages>
       </app-header-layout>
     </app-drawer-layout>

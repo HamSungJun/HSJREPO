@@ -1,5 +1,5 @@
 //! moment.js locale configuration
-//! locale : Tamil [ta]
+//! locale : tamil (ta)
 //! author : Arjunkumar Krishnamoorthy : https://github.com/tk120404
 
 import moment from '../moment';
@@ -65,7 +65,7 @@ export default moment.defineLocale('ta', {
         y : 'ஒரு வருடம்',
         yy : '%d ஆண்டுகள்'
     },
-    dayOfMonthOrdinalParse: /\d{1,2}வது/,
+    ordinalParse: /\d{1,2}வது/,
     ordinal : function (number) {
         return number + 'வது';
     },

@@ -1,5 +1,5 @@
 //! moment.js locale configuration
-//! locale : Lao [lo]
+//! locale : lao (lo)
 //! author : Ryan Hart : https://github.com/ryanhart2
 
 import moment from '../moment';
@@ -53,7 +53,7 @@ export default moment.defineLocale('lo', {
         y : '1 ປີ',
         yy : '%d ປີ'
     },
-    dayOfMonthOrdinalParse: /(ທີ່)\d{1,2}/,
+    ordinalParse: /(ທີ່)\d{1,2}/,
     ordinal : function (number) {
         return 'ທີ່' + number;
     }

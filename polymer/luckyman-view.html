@@ -8,9 +8,12 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
 
+
+<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+<link rel="import" href="../bower_components/google-map/google-map.html">
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-audio-player/paper-audio-player.html">
 <link rel="import" href="shared-styles.html">
-<link rel="import" href="../bower_components/mp-video/mp-video.html">
 
 
 <dom-module id="luckyman-view">
@@ -23,19 +26,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         padding: 10px;
       }
 
+      google-map {
+        height: 600px;
+      }
 
 
     </style>
 
-    <div class="card">
 
+
+    <div class="card">
+      <h1 style = "text-align: center" > The Paper Music Player </h1>
+      <paper-audio-player src="../bower_components/Musics/How Luxury you're.mp3" title="HanDongGeun - Luxury You are" color="#3e9bdd"></paper-audio-player>
+      <paper-audio-player src="../bower_components/Musics/Say That I Wanted.mp3" title="KimTaeWoo - Say What I Wanted" color="#3e9bdd"></paper-audio-player>
+      <paper-audio-player src="../bower_components/Musics/U R My Flower.mp3" title="MinKyugHoon - U R My Flower" color="#3e9bdd"></paper-audio-player>
     </div>
     <div class="card">
-
+      <h1>I wanna listen another song!</h1>
+      <li>call my number 010-3455-1209</li>
     </div>
-
-  </template>
-
+    
+</template>
 
   <script>
 

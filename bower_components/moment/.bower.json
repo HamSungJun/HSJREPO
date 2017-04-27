@@ -1,6 +1,5 @@
 {
   "name": "moment",
-  "license": "MIT",
   "main": "moment.js",
   "ignore": [
     "**/.*",
@@ -18,19 +17,17 @@
     "Gruntfile.js",
     "Moment.js.nuspec",
     "package.js",
-    "package.json",
-    "ISSUE_TEMPLATE.md",
-    "typing-tests"
+    "package.json"
   ],
   "homepage": "https://github.com/moment/moment",
-  "version": "2.18.1",
-  "_release": "2.18.1",
+  "version": "2.13.0",
+  "_release": "2.13.0",
   "_resolution": {
     "type": "version",
-    "tag": "2.18.1",
-    "commit": "0af7d4f5f25f911c2eaab2a7ccb534c17e65c536"
+    "tag": "2.13.0",
+    "commit": "f90b5150a46651fabd7724d06438d7df2db59401"
   },
   "_source": "https://github.com/moment/moment.git",
-  "_target": "^2.10.0",
+  "_target": "~2.13.0",
   "_originalSource": "moment"
 }

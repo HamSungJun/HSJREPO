@@ -13,6 +13,8 @@ app.use('/media', express.static(__dirname + '/'));
 app.use('/search', express.static(__dirname + '/'));
 app.use('/weather', express.static(__dirname + '/'));
 app.use('/luckyman', express.static(__dirname + '/'));
+app.use('/ourworld', express.static(__dirname + '/'));
+
 
 
 app.all('/api/add', function (req, res, next) {

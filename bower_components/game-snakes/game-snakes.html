@@ -19,13 +19,13 @@ Example:
 The following custom properties and mixins are available for styling:
 
 Custom property                 | Description           | Default
---------------------------------|-----------------------|----------
-`--game-snakes-head-background` | Head Background       | `#212121`
-`--game-snakes-tail-background` | Tail Background       | `#388E3C`
-`--game-snakes-food-background` | Food Background       | `#FF4081`
-`--game-snakes-head`            | Mixin applied to Head | `{}`
-`--game-snakes-tail`            | Mixin applied to Tail | `{}`
-`--game-snakes-food`            | Mixin applied to Food | `{}`
+
+`game-snakes-head-background` | Head Background       | `#212121`
+`game-snakes-tail-background` | Tail Background       | `#388E3C`
+`game-snakes-food-background` | Food Background       | `#FF4081`
+`game-snakes-head`            | Mixin applied to Head | `{}`
+`game-snakes-tail`            | Mixin applied to Tail | `{}`
+`game-snakes-food`            | Mixin applied to Food | `{}`
 
 @demo demo/
 -->
@@ -134,7 +134,7 @@ Custom property                 | Description           | Default
 				*/
 				state: {
 					type: String,
-					value: 'stopped',
+					value: 'playing',
 					readOnly: true,
 					notify: true,
 					observer: '_stateChanged'

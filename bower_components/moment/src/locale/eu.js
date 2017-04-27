@@ -1,5 +1,5 @@
 //! moment.js locale configuration
-//! locale : Basque [eu]
+//! locale : euskara (eu)
 //! author : Eneko Illarramendi : https://github.com/eillarra
 
 import moment from '../moment';
@@ -47,7 +47,7 @@ export default moment.defineLocale('eu', {
         y : 'urte bat',
         yy : '%d urte'
     },
-    dayOfMonthOrdinalParse: /\d{1,2}\./,
+    ordinalParse: /\d{1,2}\./,
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.

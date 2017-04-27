@@ -1,0 +1,29 @@
+{
+  "name": "x-life",
+  "description": "X-life is a web component for Conway's Game of Life.",
+  "authors": "Maya Kreidieh <mayakreidieh@gmail.com>",
+  "main": "dist/x-life.html",
+  "ignore": [
+    ".bowerrc",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc",
+    "bower.json",
+    "README.md",
+    "**/.*"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#master"
+  },
+  "homepage": "https://github.com/acrylc/x-life",
+  "_release": "1fc829ee90",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "1fc829ee90ac5b3c439b809cc5edcc3e51959fb8"
+  },
+  "_source": "https://github.com/acrylc/x-life.git",
+  "_target": "*",
+  "_originalSource": "x-life",
+  "_direct": true
+}

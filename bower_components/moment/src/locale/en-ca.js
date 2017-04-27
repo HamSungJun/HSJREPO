@@ -1,5 +1,5 @@
 //! moment.js locale configuration
-//! locale : English (Canada) [en-ca]
+//! locale : canadian english (en-ca)
 //! author : Jonathan Abourbih : https://github.com/jonbca
 
 import moment from '../moment';
@@ -41,7 +41,7 @@ export default moment.defineLocale('en-ca', {
         y : 'a year',
         yy : '%d years'
     },
-    dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
+    ordinalParse: /\d{1,2}(st|nd|rd|th)/,
     ordinal : function (number) {
         var b = number % 10,
             output = (~~(number % 100 / 10) === 1) ? 'th' :
